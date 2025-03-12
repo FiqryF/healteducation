@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Personal Branding</title>
+</head>
+
+<body>
+    <!--Header-->
+    <header class="bg-white fixed top-0 left-0 w-full z-50 shadow-md">
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <div class="md:flex md:items-center md:gap-12">
+                    <a class="block text-red-700 font-bold text-xl" href="#">
+                        <h1>F CONFIRM</h1>
+                    </a>
+                </div>
+
+                <!-- Navigasi Desktop -->
+                <nav class="hidden md:block">
+                    <ul class="inline-flex gap-4 text-sm">
+                        <li><a class="menu-item px-5 py-2 rounded-full transition duration-300" href="#education">
+                                Education </a>
+                        </li>
+                        <li><a class="menu-item px-5 py-2 rounded-full transition duration-300" href="#experience">
+                                Experience </a>
+                        </li>
+                        <li><a class="menu-item px-5 py-2 rounded-full transition duration-300" href="#project">
+                                Projects </a></li>
+                        <li><a class="menu-item px-5 py-2 rounded-full transition duration-300" href="#skills"> Skills
+                            </a></li>
+                    </ul>
+                </nav>
+
+                <!-- Tombol Hamburger -->
+                <button id="menu-toggle"
+                    class="md:hidden rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
+                    <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="size-6" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menu Mobile -->
+            <div id="mobile-menu"
+                class="hidden md:hidden absolute top-16 left-0 w-full bg-white shadow-lg rounded-b-lg">
+                <nav>
+                    <ul class="flex flex-col gap-4 p-4 text-sm">
+                        <li><a class="text-gray-700 transition hover:text-red-500" href="#education"> Education </a>
+                        </li>
+                        <li><a class="text-gray-700 transition hover:text-red-500" href="#experience"> Experience </a>
+                        </li>
+                        <li><a class="text-gray-700 transition hover:text-red-500" href="#project"> Projects </a></li>
+                        <li><a class="text-gray-700 transition hover:text-red-500" href="#skills"> Skills </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--Header-->
+
+     <!--Content-->
+  <section class="bg-gray-50">
+    <div class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
+      <div class="mx-auto max-w-xl text-center">
+        <div class="mx-auto max-w-xl text-center">
+          <h2 id="fade-title" class="fade-loop text-3xl font-extrabold sm:text-5xl">
+            HI, MY NAME IS
+            <strong class="font-extrabold text-red-700 sm:block"> FIQRY FIRMANSYAH </strong>
+          </h2>
+        </div>
+
+
+        <p class="mt-4 sm:text-xl/relaxed">
+          I am a student at the University of Logistics and International Business,
+          and I am excited to start my journey as a new frontend developer. Nice to meet you!
+        </p>
+
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a id="openModal" class="about-btn" href="#">About Me</a>
+          <a class="about-btn" href="#">Download CV</a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Content-->
+</body>
+</html>
