@@ -10,7 +10,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: #27445D;
+    background: #A31D1D;
     padding: 15px 20px;
     color: white;
     display: flex;
@@ -46,3 +46,21 @@ body {
     font-size: 20px;
     font-weight: bold;
 }
+
+.floating {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background: #A31D1D;
+    padding: 15px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    border-radius: 90px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
