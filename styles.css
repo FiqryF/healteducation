@@ -64,3 +64,105 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #27445D;
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    .menu-button {
+        display: flex;
+        background: #801515; /* Warna lebih gelap dari A31D1D */
+        color: #ffffff;
+        border: none;
+        padding: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 50%;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        transition: background 0.3s, transform 0.3s;
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-button:hover {
+        background: #5a0f0f; /* Warna lebih gelap saat hover */
+        transform: scale(1.1);
+    }
+
+    .menu-button.open {
+        transform: rotate(90deg);
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        right: 20px;
+        background: #27445D;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .nav.active {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .nav a {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .nav a:last-child {
+        border-bottom: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .menu-button {
+        display: none; /* Hilangkan tombol hamburger di desktop */
+    }
+
+    .nav {
+        display: flex;
+        gap: 15px;
+        position: relative;
+        top: auto;
+        right: auto;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+        opacity: 1;
+        transform: none;
+    }
+}
